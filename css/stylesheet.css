@@ -1,0 +1,1218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: var(--poppins);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--poppins);
+}
+
+h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+:root{
+    --poppins: 'Poppins', sans-serif;
+    --white: #fff;
+    --black: #000;
+    --orangebg: #F20406;
+    --orangeMain: #F35C04;
+    --fadeOrange: #FF7C1A;
+    --regular: 400;
+    --medum: 500;
+    --semibold: 600;
+    --bold: 700;
+}
+
+.img-fluid{
+  max-width: 100%;
+}
+
+.container-fluid{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sprite{
+  display: inline-block;    
+  background: url('../images/');
+  background-repeat: no-repeat;   
+}
+
+.navbg{
+    background-color: var(--orangebg);
+}
+
+#markerOne{
+    position: absolute;
+    height: 3.5rem;
+    width: 0;
+    background-color: var(--white);
+    bottom: -8px;
+    transition: 0.5s;
+    border-radius: .5rem;
+
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--orangebg);
+    padding: 1rem 6rem 1rem 8rem;
+}
+
+.navBar h1{
+    color:var(--white);
+}
+
+.navBar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navBar ul li{
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.navBar ul li a img{
+    height: .7rem;
+    width: 1.3rem;
+    margin: 0 0 0 .4rem;
+    cursor: pointer;
+}
+
+
+.dropdown1{
+    padding: .5rem 0;
+    background-color: var(--white);
+    flex-direction: column; 
+    filter: drop-shadow(0px 5px 6px #CBC8C829);
+    position: absolute;
+    top: 4.7rem;
+    right: 5.5rem;
+    z-index: 1;
+}
+
+.dropdown1 li{
+    padding: 0 1rem;
+    position: relative;
+    width: auto;
+}
+
+.dropdown1 li::after{
+    content: '';
+    width: 218px;
+    height: .1rem;
+    background-color: rgb(226, 223, 223);
+    position: absolute;
+    display: inline-block;
+    left: -10px;
+}
+
+.dropdown1 li:nth-child(5)::after{
+    display: none;
+}
+
+#hide1-show1{display: none;
+    align-items: baseline;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.dropdown1 li a{
+    margin: 1rem;
+}
+
+.dropdown1 li a img{
+    height: 20rem;
+    width: 20rem;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+}
+
+.dropdown1 li a p{
+    color: var(--black);
+    font-family: var(--poppins);
+    font-weight: var(--regular);
+}
+
+.bagBanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../images/Path\ 10740.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-y: bottom;
+    margin: 0 0 5rem 0;
+}
+
+.bagBanner h2{
+    font-size: 2.7rem;
+    font-weight: var(--regular);
+    color: var(--orangebg);
+    margin: 2rem 0 0 0;
+    position: relative;
+}
+
+.bannerCont{
+    padding: 10rem 0;
+}
+
+.bagBanner::before{
+    content: '';
+    background-image: url(../images/Group\ 1521.png);
+    display: inline-block;
+    width: 35.3rem;
+    height: 35.6rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.bagBanner::after{
+    content: '';
+    background-image: url(../images/Group\ 2152.png);
+    display: inline-block;
+    width: 35.3rem;
+    height: 35.6rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+span{
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: bolder;
+    cursor: pointer;
+    position: relative;
+    left: 92%;
+    top: 1.6%;
+}
+
+
+.compWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -10rem 0 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+.compWrap img{
+    margin: 0 auto;
+}
+
+
+.Overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 0 5rem 0;
+}
+
+.Overview h2{
+    color: var(--orangeMain);
+    margin: 4rem 0;
+}
+
+
+.Overview::before{
+    content: '';
+    width: 3.2rem;
+    height: .4rem;
+    background-color: var(--fadeOrange);
+    position: absolute;
+    display: inline-block;
+    border-radius: 1rem;
+    top: 100px;
+}
+
+.Overview p{
+    font-size: 1.6rem;
+    font-weight: var(--regular);
+    text-align: center;
+    color: #000000;
+    line-height: 2.4rem;
+    width: 92%;
+    margin: .5rem 0;
+}
+
+.Overview strong{
+    font-size: 1.6rem;
+    font-weight: var(--bold);
+    text-align: center;
+    color: var(--fadeOrange);
+    line-height: 2.4rem;
+    width: 50%;
+    margin: 1.5rem 0;
+    display: none;
+    transition: height 2s ease;
+}
+
+.Overview h3{
+    font-size: 1.6rem;
+    color: var(--orangebg);
+    cursor: pointer;
+}
+
+.sectorC{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    background-color: #F9F9F9;
+}
+
+
+.sectorC h2{
+    color: var(--orangeMain);
+    margin: 2rem 0;
+}
+
+.sectorC::before{
+    content: '';
+    width: 3.2rem;
+    height: .4rem;
+    background-color: var(--fadeOrange);
+    position: absolute;
+    display: inline-block;
+    border-radius: 1rem;
+    top: 9rem;
+    left: 48%;
+}
+
+.sectorElem{
+    margin: 4rem 0;
+}
+
+.layoutSec{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.sectorC{
+    display: flex;
+    flex-direction: column;
+} 
+
+.textLay{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fadeOrange);
+    padding: 0 2rem; 
+    position: relative;
+    box-sizing: border-box;
+}
+
+.textLay::after{
+    content: '';
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--fadeOrange);
+    position: absolute;
+    display: inline-block;
+    right: -2%;
+    top: 44%;
+    transform: rotate(45deg);
+}
+
+.textTwo{
+    background-color: var(--orangeMain);
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h2{
+    font-size: 3.1rem;
+    font-weight: var(--bold);
+    color: var(--white);   
+}
+
+.title h3{
+    font-size: 1.4  rem;
+    font-weight: var(--semibold);
+    color: var(--white);   
+}
+
+.textLay p{
+    font-size: 1.6rem;
+    font-weight: 2.1rem;
+    width: 76.5rem;
+    color: var(--white);
+    font-weight: var(--regular);
+    text-align: left;
+}
+
+.textLay button{
+    width: 15.5rem;
+    height: 3.9rem;
+    border-radius: 1.9rem;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: var(--regular);
+    background-color: #0D0D0D;
+    border: 0;
+    margin: 2rem 0;
+}
+
+.textLay{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fadeOrange);
+    padding: 1rem 2rem; 
+    position: relative;
+    box-sizing: border-box;
+}
+
+.textTwo{
+    background-color: var(--orangeMain);
+}
+
+.textTwo::after{
+    content: '';
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--orangeMain);
+    position: absolute;
+    display: inline-block;
+    left: -3%;
+    top: 44%;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.picLay{
+    display: flex;
+    align-items: center;
+}
+
+.inFocus{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem 0 2rem 0;
+}
+
+.inFocusText{
+    display: flex;
+    position: relative;
+}
+
+.inFocusText::before {
+    content: '';
+    width: 3.2rem;
+    height: .4rem;
+    background-color: var(--fadeOrange);
+    position: absolute;
+    display: inline-block;
+    border-radius: 1rem;
+    top: 6rem;
+    left: 48%;
+}
+
+
+.inFocusText h2{
+    font-size: 4rem;
+    color: var(--orangeMain);
+    font-weight: var(--bold);
+    width: auto;
+    margin: 0 .8rem 0 0;
+}
+
+.inFocusText h3{
+    font-size: 4rem;
+    color: var(--orangeMain);
+    font-weight: var(--regular);
+}
+
+.inFocusElem{
+    width: 90%;
+} 
+
+.inFocusElem ul{
+    margin: 4rem 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inFocusElem ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    margin: 3rem 1rem;
+}
+
+.inFocusElem ul li strong{
+    width: 16.5rem;
+    height: 5rem;
+    text-align: center;
+    margin: .8rem 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: var(--regular);
+}
+
+
+.whoShould{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0 2rem 0;
+    background-color: #F9F9F9;
+}
+
+.whoShouldText{
+    display: flex;
+    position: relative;
+}
+
+.whoShouldText h2{
+    font-size: 4rem;
+    color: var(--orangeMain);
+    font-weight: var(--regular);
+    width: auto;
+    margin: 0 .8rem 0 0;
+}
+
+.whoShouldText h3{
+    font-size: 4rem;
+    color: var(--orangeMain);
+    font-weight: var(--bold);
+}
+
+.whoShouldText::before {
+    content: '';
+    width: 3.2rem;
+    height: .4rem;
+    background-color: var(--fadeOrange);
+    position: absolute;
+    display: inline-block;
+    border-radius: 1rem;
+    top: 6rem;
+    left: 46%;
+}
+
+.whoShould h4{
+    font-size: 1.6rem;
+    font-weight: var(--regular);
+    line-height: 2.4rem;
+    margin: 3rem 0 0 0;
+}
+
+.whoShould img{
+    margin: 5rem 0;
+}
+
+.Whoimg2{
+    display: none;
+}
+
+.whyAttend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.whyAttendtext{
+    display: flex;
+    position: relative;
+}
+
+.whyAttendtext h2{
+    font-size: 4rem;
+    color: var(--orangeMain);
+    font-weight: var(--regular);
+    width: auto;
+    margin: 0 .8rem 0 0;
+}
+
+.whyAttendtext h3{
+    font-size: 4rem;
+    color: var(--orangeMain);
+    font-weight: var(--bold);
+}
+
+.whyAttendtext::before {
+    content: '';
+    width: 3.2rem;
+    height: .4rem;
+    background-color: var(--fadeOrange);
+    position: absolute;
+    display: inline-block;
+    border-radius: 1rem;
+    top: 6rem;
+    left: 46%;
+}
+
+.whyAttendElem{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.whyAttendElem li{
+    display: flex;
+    align-items: center;
+    padding: 2rem 6rem;
+    box-sizing: border-box;
+    width: 53.8rem;
+    height: 16.2rem;
+    border-radius: 1.1rem;
+    margin: 2rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+    position: relative;
+}
+
+.whyAttendElem li:first-child{
+    background-color: #F2F2F1;
+    box-shadow: none;
+}
+
+.whyAttendElem li figure img{
+    padding: 1rem;
+    border-radius: .9rem;
+    background-color: #E03E25;
+    position: absolute;
+    top: 5rem;
+    left: -3rem;
+}
+
+.whyAttendElem li strong{
+    font-size: 1.6rem;
+    font-weight: var(--medum);
+    text-align: left;
+}
+
+.forPartner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    background-color: var(--orangebg);
+}
+
+.forPartner h1{
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.forPartner ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5rem 0 1rem 0;
+}
+
+.forPartner ul li{
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-radius: 1.8rem;
+    margin: 1rem 3rem;
+    background-color: var(--white);
+}
+
+.partnerText h2{
+    font-size: 1.7rem;
+    font-weight: var(--bold);
+    margin: 0 0 0 1rem;
+}
+
+.partnerText p{
+    font-size: 1.3rem;
+    font-weight: var(--regular);
+    margin: .5rem 0 .5rem 1rem;
+}
+
+
+@media (max-width: 1280px){
+
+    .navBar {
+        padding: 1rem 6rem 1rem 4rem;
+    }
+
+    .navBar ul li {
+        list-style: none;
+        margin: 0 .8rem;
+    }
+
+    .navBar ul li a {
+        font-size: 1.1rem;
+    }
+
+    .bagBanner::before{
+        width: 25rem;
+        height: 25rem;
+    }
+    
+    .bagBanner::after{
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .whyAttendElem{
+        margin: 4rem 0;
+    }
+
+}
+
+@media (max-width: 1050px){
+    .navBar {
+        padding: 1rem 2rem 1rem 2rem;
+      }
+
+    .navBar ul li a img {
+        height: .5rem;
+        width: 1rem;
+    }
+
+    .bannerCont img{
+        height: 40%;
+        width: 60%;
+    }
+
+    .bagBanner h2 {
+        font-size: 2rem;
+        margin: 1rem 0 0 0;
+        position: relative;
+    }
+
+    .textLay p {
+        font-size: 1.4rem;
+        width: 55rem;
+      }
+
+
+}
+
+@media (max-width: 880px){
+
+    .navBar {
+        padding: 1rem 1rem 1rem 2rem;
+      }
+
+    .navBar h1{
+        font-size: 1.4rem;
+    }
+
+    .navBar ul li {
+        list-style: none;
+        margin: 0 .4rem;
+      }
+
+      .navBar ul li a {
+        font-size: 1rem;
+      }
+
+      .bagBanner::before{
+        width: 20.3rem;
+        height: 20.6rem;
+    }
+    
+    .bagBanner::after{
+        width: 20.3rem;
+        height: 20.6rem;
+    }
+
+    .title h2 {
+        font-size: 2.2rem;
+    }
+
+    .textLay p {
+        font-size: 1.2rem;
+        width: 35rem;
+    }
+
+    .title h3 {
+        font-size: 1.3rem;
+    }
+
+    .textLay{
+        margin: 0 1rem 0 0;
+    }
+
+    .textLay button {
+        width: 9rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+        margin: 2rem 0;
+        font-size: 1.4rem;
+    }
+
+  
+}
+
+@media (max-width: 800px){
+
+    .navBar{
+        align-items: flex-start;
+        height: auto;
+        padding: 2rem 2rem;
+    }
+
+    .menu-btn{
+        display: flex;
+    }
+
+    .navBar ul{
+        flex-direction: column;
+        position: relative;
+        margin: 4rem 10rem 0 0;
+        background-color: var(--white);
+        border-radius: 1rem;
+        padding: 1rem;
+        display: none;
+    }
+
+    .navBar ul li {
+        list-style: none;
+        margin: .5rem .4rem;
+      }
+
+      .navBar ul li a {
+        color: var(--orangebg);
+        font-weight: var(--medum);
+      }
+
+    .bagBanner::before{
+        width: 10.3rem;
+        height: 10.6rem;
+    }
+    
+    .bagBanner::after{
+        width: 10.3rem;
+        height: 10.6rem;
+    }
+    
+    .bannerCont img{
+        width: 80%;
+        height: 60%;
+    }
+
+    .bagBanner h2 {
+        font-size: 1.6rem;
+        margin: .5rem 0 0 0;
+    }
+
+    .bannerCont {
+        padding: 5rem 0 10rem 0;
+      }
+    
+    .compWrap img{
+        width: 90%;
+        height: 80%;
+    }
+
+    .compWrap {
+        margin: -7.5rem 0 0 0;
+    }
+
+    .Overview::before{
+        content: '';
+        width: 3.2rem;
+        height: .4rem;
+        background-color: var(--fadeOrange);
+        position: absolute;
+        display: inline-block;
+        border-radius: 1rem;
+        bottom: 0;
+    }
+
+    .dropdown1{
+        display: none;
+    }
+
+    .navBar {
+        padding: 2rem 2rem 2rem 1rem;
+      }
+
+    .navBar ul {
+        margin: 5rem 0 0 -12rem;
+        padding: 1rem;
+    }
+
+    span {
+        top: -.3rem;
+    }
+
+    .bannerCont img {
+        width: 60%;
+        height: 40%;
+    }
+
+    .bannerCont {
+        padding: 3rem 0 5rem 0;
+    }
+
+    .bagBanner h2 {
+        width: 15rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin: 2rem auto 0 auto;
+    }
+
+    .compWrap img {
+        width: 100%;
+        height: 100%;
+        margin: 1rem 0 0 0;
+    }
+
+    .Overview h2 {
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    .Overview::before {
+        width: 2.2rem;
+        height: .3rem;
+        top: 5rem;
+    }   
+
+    .Overview p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        width: 92%;
+        margin: .1rem 0;
+    }    
+
+    .Overview h3 {
+        font-size: 1.3rem;
+        font-weight: var(--regular);
+        margin: 1rem 0 0 0;
+    }
+
+    .Overview {
+        margin: 0 0 2rem 0;
+    }
+
+    .sectorC h2 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    .sectorC h2 {
+        margin: 2rem 0 0 0;
+      }
+
+    .sectorC::before {
+        top: 5.5rem; 
+    }
+
+    .forPartner h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .forPartner ul{
+        margin: 3rem 0 1rem 0;
+    }
+
+
+} 
+      
+@media (max-width: 750px){
+    .title h3 {
+        display: none;
+    }
+
+    .title h2 {
+        margin: 0;
+    }
+
+    .textLay p {
+        font-size: 1.4rem;
+        width: 100%;
+    }
+
+    .picLay{
+        position: absolute;
+        width: 50%;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pic1{
+        top: 4%;
+    }
+
+    .picLay img{
+        width: 70%;
+        height: 70%;
+        z-index: 1;
+    }
+
+    .textLay::after {
+        display: none;
+    }
+
+    .title {
+        height: 15rem;
+    }
+
+    .sectorC h2 {
+        color: var(--white);
+    }
+
+    .sectorC{
+        background-color: var(--orangeMain);
+    }
+
+    .textLay {
+        background-color: var(--orangeMain);
+    }
+
+    .sectorElem {
+        margin: 0;
+    }
+
+    .sectorC::before {
+        background-color: var(--white);
+        z-index: 1;
+    }
+
+    .textLay button {
+        width: 11.5rem;
+        height: 2.8rem;
+    }
+    
+    .titleTwo{
+        justify-content: right;
+    }
+    
+    .pic2, .pic4{
+        left: 0;
+    }
+
+    .pic2{
+        top: 27.6%;
+    }
+
+    .pic3{
+        top: 53%;
+    }
+
+    .pic4{
+        top: 76.8%;
+    }
+
+    .inFocusText h2 {
+        font-size: 2rem;
+    }
+
+    .inFocusText h3{
+        font-size: 2rem;
+    }
+
+    .inFocusElem {
+        width: 100%;
+    }
+
+    .inFocusElem ul li {
+        margin: 2.5rem 3rem;
+    }
+
+    .inFocusElem ul {
+        justify-content: space-evenly;
+    }
+
+    .inFocusElem ul li strong {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        font-weight: var(--medum);
+        width: 10rem;
+    }
+
+    .inFocusElem ul li figure img{
+        height: 4rem;
+        width: 4rem;
+    } 
+
+    .whoShouldText h2 {
+        font-size: 2rem;
+    }
+
+    .whoShouldText h3 {
+        font-size: 2rem;
+    }
+
+    .whoShouldText::before {
+        top: 4rem;
+    }
+
+    .whoShould h4 {
+        font-size: 1.4rem;
+        font-weight: var(--medum);
+        line-height: 1.6rem;
+        margin: 3rem 0 0 0;
+        text-align: center;
+    }
+
+    .Whoimg2{
+        display: block;
+    }
+
+    .Whoimg1{
+        display: none;
+    }
+
+    .whoShould {
+        padding: 4rem 0 1rem;
+    }
+
+    .whyAttendElem li{
+        padding: 2rem 1rem 2rem 5rem;
+        width: 32rem;
+        height: 8.2rem;
+        margin: 2rem 0;
+    }
+    
+    .whyAttendElem li figure img{
+        width: 3rem;
+        height: 3rem;
+        padding: 1rem;
+        top: 1.7rem;
+        left: -2rem;
+    }
+    
+    .whyAttendElem li strong{
+        font-size: 1.1rem;
+    }
+
+    .whyAttendtext h2 {
+        font-size: 2rem;
+    }
+
+    .whyAttendtext h3 {
+        font-size: 2rem;
+    }
+
+    .whyAttendtext::before {
+        top: 4rem;
+        height: .3rem;
+        left: 40%;
+    }
+
+    .whyAttendElem li:first-child{
+        background-color: var(--white);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+    }
+
+    .partnerText h2 {
+        font-size: 1.5rem;
+    }
+
+    .forPartner ul li {
+        padding: 1rem 1rem;
+        margin: 1rem 0;
+    }
+
+    .partnerText p {
+        font-size: 1.2rem;
+    }
+    
+    .forPartner h1 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 0 3rem;
+    }
+    
+
+
+
+
+
+
+
+}
+
+@media (max-width:400px){
+    .pic1{
+        top: 3.5%;
+    }
+
+    .sectorElem {
+        margin: 0;
+    }
+
+    .inFocusElem ul li {
+        margin: 2.5rem 0;
+    }
+
+    .inFocusElem ul {
+        justify-content: space-between;
+    }
+
+
+}
